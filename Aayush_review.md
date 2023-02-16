@@ -1,5 +1,3 @@
-# SQL_Assignment
-
 ## Question 1
 - Created the table employees with empid as **primary key** and name, gender and department as other attributes and inserted values into it.
 - In the main query, for first column selected **DISTINCT** Department column.
