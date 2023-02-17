@@ -15,7 +15,13 @@ VALUES(45,'abc@gmail.com'),
       
 SELECT * FROM record;
 
-SELECT MIN(Candidate_id) AS Candidate_ID, Email
-FROM record
-GROUP BY Email
-ORDER BY Candidate_ID DESC;      
+DELETE FROM record
+WHERE Candidate_id NOT IN (
+   SELECT min_id FROM (
+      SELECT MIN(Candidate_id) AS min_id FROM record
+      GROUP BY Email
+      ) a
+   );
+   
+   SELECT * FROM record;
+
