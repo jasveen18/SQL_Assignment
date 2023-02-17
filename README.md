@@ -39,7 +39,9 @@
 ## Question 4
 - Created the database using **CREATE DATABASE sql_q4** and used it using **USE sql_q4**.
 - Created the table record with Candidate_id as **primary key** and Email as another attribute and inserted values into it.
-- In the main query, for first column used aggregated function **MIN** for finding the minimum Candidate_id in particular group.
-- For second column selectd Email.
+- In the subquery, used aggregated function **MIN** for finding the minimum Candidate_id in particular group.
 - Used **GROUP BY** clause for grouping the table according to the Email.
-- Used **ORDER BY** clause to display table in descending order according to Candidate_id.
+- Once we have the minimum Candidate_id, run a **DELETE** query to delete the ids which are not included in those list of ids.
+
+
+ 
