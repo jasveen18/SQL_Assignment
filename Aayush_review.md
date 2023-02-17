@@ -28,6 +28,7 @@
 
 ## Question 4
 - Created the table detail with candidate_id as **primary key** and email as another attribute and inserted values into it.
-- In the subquery calculated Minimum candidate_id from detail table grouping the table according to email using **GROUP BY** clause.
-- Selected all columns from detail table **WHERE** candidate_id is equal to the result of above subquery.
-- Used **ORDER BY** clause to display table in descending order according to Candidate_id.
+- In the subquery, used aggregated function **MIN** for finding the minimum candidate_id in particular group. 
+- Used **GROUP BY** clause for grouping the table according to the email. 
+- Once we have the minimum candidate_id, Run a **DELETE** query to delete the ids which are not included in those list of ids.
+
