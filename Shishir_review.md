@@ -30,6 +30,6 @@ For all questions created a database named 'assignment' and used it.
 
 ## Question 4
 - Created the table candidate_Info with Candidate_Id as **primary key** and Email as another attribute and inserted values into it.
-- In the main query, for first column used aggregated function **MIN** for finding the minimum Candidate_Id in particular group.
-- For second column selectd Email.
-- Used **GROUP BY** clause for grouping the table according to the Email.
+- In the subquery, used aggregated function **MIN** for finding the minimum Candidate_Id in particular group. 
+- Used **GROUP BY** clause for grouping the table according to the Email. 
+- Once we have the minimum Candidate_Id, Run a **DELETE** query to delete the ids which are not included in those list of ids.
